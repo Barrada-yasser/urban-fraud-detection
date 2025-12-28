@@ -1,6 +1,11 @@
-## 🏗️ Architecture du Système
 
-### Diagramme de flux (Mermaid)
+
+
+
+ # 🚦 Urban Fraud Detection - Analyse de Situations Routières
+
+## 📋 Description
+Système intelligent d'analyse de situations routières utilisant YOLO pour détecter et classifier les interactions entre piétons, véhicules et infrastructure routière.
 ```mermaid
 graph LR
     %% Style definitions
@@ -39,13 +44,6 @@ graph LR
     class F detectionStyle
     class G resultStyle
 ```
-
-
- # 🚦 Urban Fraud Detection - Analyse de Situations Routières
-
-## 📋 Description
-Système intelligent d'analyse de situations routières utilisant YOLO pour détecter et classifier les interactions entre piétons, véhicules et infrastructure routière.
-
 ## 🎯 Fonctionnalités
 - **Détection multi-objets** : Piétons, véhicules, routes, passages piétons
 - **Analyse de situations** : Classification automatique des situations de circulation
@@ -166,5 +164,6 @@ votre-projet/
 - [OpenCV](https://opencv.org/)
 
 - Dataset JAAD pour les tests
+
 
 
