@@ -1,3 +1,6 @@
+## 🏗️ Architecture du Système
+
+### Diagramme de flux (Mermaid)
 ```mermaid
 graph LR
     %% Style definitions
@@ -34,7 +37,10 @@ graph LR
     class D aiStyle
     class E analysisStyle
     class F detectionStyle
-    class G resultStyle```
+    class G resultStyle
+```
+
+
  # 🚦 Urban Fraud Detection - Analyse de Situations Routières
 
 ## 📋 Description
@@ -160,4 +166,5 @@ votre-projet/
 - [OpenCV](https://opencv.org/)
 
 - Dataset JAAD pour les tests
+
 
