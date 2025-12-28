@@ -1,4 +1,41 @@
-﻿# 🚦 Urban Fraud Detection - Analyse de Situations Routières
+```mermaid
+graph LR
+    %% Style definitions
+    classDef frontendStyle fill:#4a5bdc,stroke:#3d4bb8,stroke-width:3px,color:#fff,font-size:14px
+    classDef backendStyle fill:#4a5bdc,stroke:#3d4bb8,stroke-width:3px,color:#fff,font-size:14px
+    classDef processingStyle fill:#f59e42,stroke:#d98636,stroke-width:3px,color:#fff,font-size:14px
+    classDef aiStyle fill:#48bb78,stroke:#3da565,stroke-width:3px,color:#fff,font-size:14px
+    classDef analysisStyle fill:#f59e42,stroke:#d98636,stroke-width:3px,color:#fff,font-size:14px
+    classDef detectionStyle fill:#e53e3e,stroke:#c53030,stroke-width:3px,color:#fff,font-size:14px
+    classDef resultStyle fill:#4a5bdc,stroke:#3d4bb8,stroke-width:3px,color:#fff,font-size:14px
+    
+    %% Nodes
+    A["💻 Interface Web Frontend<br/>─────────────────<br/>Interface HTML statique - Upload vidéo<br/>HTML/CSS3 | JavaScript"]
+    B["⚡ API Backend FastAPI<br/>─────────────────<br/>Serveur FastAPI - Découpage vidéo en frames<br/>FastAPI | Python | OpenCV"]
+    C["🎬 Extraction de Frames<br/>─────────────────<br/>Découpage automatique: Vidéo → Images<br/>OpenCV | FFmpeg"]
+    D["🤖 Modèles YOLOv8-seg<br/>─────────────────<br/>3 Modèles: Personnes + Véhicules | Routes + Passages piétons<br/>YOLOv8-seg | PyTorch"]
+    E["📊 Analyse de Situation<br/>─────────────────<br/>Classification frame par frame: Position piéton vs passage<br/>Analyse spatiale | Géométrie"]
+    F["🚨 Résultats & Détection de Fraude<br/>─────────────────<br/>✅ Correct | ⚠️ DANGER: Hors passage | 🛣️ Route vide | 🚗 Véhicules<br/>Classification | Scoring"]
+    G["📤 Affichage des Résultats<br/>─────────────────<br/>Images annotées + Classification finale<br/>Visualisation | Rapports"]
+    
+    %% Connections
+    A -->|Upload Vidéo| B
+    B -->|Traitement| C
+    C -->|Frames extraites| D
+    D -->|Détections| E
+    E -->|Analyse spatiale| F
+    F -->|Résultats| G
+    G -->|Affichage| A
+    
+    %% Apply styles
+    class A frontendStyle
+    class B backendStyle
+    class C processingStyle
+    class D aiStyle
+    class E analysisStyle
+    class F detectionStyle
+    class G resultStyle```
+ # 🚦 Urban Fraud Detection - Analyse de Situations Routières
 
 ## 📋 Description
 Système intelligent d'analyse de situations routières utilisant YOLO pour détecter et classifier les interactions entre piétons, véhicules et infrastructure routière.
@@ -123,3 +160,4 @@ votre-projet/
 - [OpenCV](https://opencv.org/)
 
 - Dataset JAAD pour les tests
+
