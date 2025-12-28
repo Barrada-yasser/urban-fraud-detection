@@ -7,7 +7,7 @@
 ## 📋 Description
 Système intelligent d'analyse de situations routières utilisant YOLO pour détecter et classifier les interactions entre piétons, véhicules et infrastructure routière.
 ```mermaid
-graph LR
+graph TB
     %% Style definitions
     classDef frontendStyle fill:#4a5bdc,stroke:#3d4bb8,stroke-width:3px,color:#fff,font-size:14px
     classDef backendStyle fill:#4a5bdc,stroke:#3d4bb8,stroke-width:3px,color:#fff,font-size:14px
@@ -164,6 +164,7 @@ votre-projet/
 - [OpenCV](https://opencv.org/)
 
 - Dataset JAAD pour les tests
+
 
 
 
